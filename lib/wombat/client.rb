@@ -10,7 +10,7 @@ module Wombat
 
     def self.push(json_payload)
       res = HTTParty.post(
-        Spree::configuration.push_url,
+        Wombat.configuration.push_url,
           {
             body: json_payload,
             headers: {
@@ -25,11 +25,10 @@ module Wombat
     end
 
     private
-    def validate(res)
+    def self.validate(res)
       raise PushApiError, "Push not successful. Wombat returned response code #{res.code} and message: #{res.body}" if res.code != 202
     end
+
+    class PushApiError < StandardError; end
   end
-
-  class PushApiError < StandardError; end
-
 end
