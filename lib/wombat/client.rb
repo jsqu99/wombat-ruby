@@ -22,6 +22,7 @@ module Wombat
           }
       )
       validate(res)
+      res
     end
 
     private
