@@ -10,7 +10,7 @@ module Wombat
 
     def self.push(json_payload)
       res = HTTParty.post(
-        Spree::Wombat::Config[:push_url],
+        Spree::configuration.push_url,
           {
             body: json_payload,
             headers: {
