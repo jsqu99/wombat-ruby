@@ -6,7 +6,7 @@ Ruby API client for pushing objects to [Wombat](https://my.wombat.co)
 
 Add this line to your application's Gemfile:
 
-    gem 'wombat-ruby', github: 'wombat/wombat-ruby'
+    gem 'wombat-ruby', github: 'wombat/wombat-ruby', require: 'wombat'
 
 And then execute:
 
