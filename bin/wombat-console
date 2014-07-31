@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
-irb -r rubygems -r ./lib/wombat.rb
+require 'irb'
+require 'wombat'
+
+console = Object.const_get(:IRB)
+console.start

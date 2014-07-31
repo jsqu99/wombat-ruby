@@ -33,10 +33,10 @@ Wombat::Client.push(json_payload)
 
 You can also use the console to debug or test pushing objects.
 
-Start the console like this:
+Start the console like this from your application where you are using wombat-ruby.
 
 ```shell
-bundle exec bin/console
+bundle exec wombat-console
 ```
 
 In the console you will have to setup your credentials, then you can push json objects like this:
