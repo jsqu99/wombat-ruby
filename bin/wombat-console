@@ -1,1 +1,3 @@
+#!/usr/bin/env ruby
+
 irb -r rubygems -r ./lib/wombat.rb
