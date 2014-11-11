@@ -7,9 +7,7 @@ require 'active_model/array_serializer'
 module Wombat
   module Client
 
-    def self.push(json_payload, options={})
-
-      options = configuration.merge(options)
+    def self.push(json_payload, options=self.configuration)
 
       res = HTTParty.post(
         options[:push_url],
