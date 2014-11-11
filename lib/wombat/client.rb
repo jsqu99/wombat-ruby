@@ -7,9 +7,9 @@ require 'active_model/array_serializer'
 module Wombat
   module Client
 
-    def self.push(json_payload)
+    def self.push(json_payload, uri=Wombat.configuration.push_url)
       res = HTTParty.post(
-        Wombat.configuration.push_url,
+        uri,
           {
             body: json_payload,
             headers: {
