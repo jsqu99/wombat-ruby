@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0.0"
   spec.add_development_dependency "webmock"
-  spec.add_dependency 'active_model_serializers', '0.9.0.alpha1'
+  spec.add_dependency 'active_model_serializers', '~> 0.9.0'
   spec.add_dependency 'httparty'
 end
